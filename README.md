@@ -7,6 +7,7 @@ There are:
 - LaTeX/BibLaTeX database *konstantin-morenko.bst*
 - template for LaTeX/PDF *konstantin-morenko.tex*
 - PDF formatted list *konstantin-morenko.pdf*
+- *source-prepage.tex* for creating title pages for publushed writings
 
 Extracting code from main database into BibLaTeX database file could
 be made with emacs command ~org-babel-tangle~, bound to keys

@@ -1,0 +1,37 @@
+\documentclass[onecolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage[
+  a4paper,
+  top=1.5cm,
+  bottom=1.5cm,
+  left=3cm,
+  right=1cm
+]{geometry}
+
+\usepackage[
+  backend=biber,
+  defernumbers=true,
+  style=gost-numeric,
+  sorting=none,
+  autolang=other,
+]{biblatex}
+\addbibresource{source.bst}
+
+\begin{document}
+
+\section*{Научный труд Моренко Константина Сергеевича}
+
+\center{\today}
+\begin{tabular}{c l}
+  Персональный сайт & http://konstantin-morenko.ru \\
+  email & me@konstantin-morenko.ru \\
+  Профиль в elibrary.ru & ? \\
+  Список трудов & github? \\
+\end{tabular}
+
+\nocite{*}
+\printbibliography[heading=none,keyword={konstantin-morenko}]
+
+\end{document}
