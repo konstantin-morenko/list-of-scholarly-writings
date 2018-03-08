@@ -1,7 +1,9 @@
 \documentclass[onecolumn]{article}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[T1,T2A]{fontenc}
 \usepackage[russian,english]{babel}
+\usepackage{times}
 \usepackage[
   a4paper,
   top=1.5cm,
@@ -28,6 +30,36 @@
 \center{email: me@konstantin-morenko.ru}
 
 \nocite{*}
-\printbibliography[heading=none,keyword={konstantin-morenko}]
+
+%% \printbibliography[%
+%%   keyword=konstantin-morenko,
+%%   type=book,
+%%   heading=subbibliography,
+%%   title={Книги},
+%% ]
+\printbibliography[%
+  keyword=konstantin-morenko,
+  type=article,
+  heading=subbibliography,
+  title={Статьи в журналах},
+]
+\printbibliography[%
+  keyword=konstantin-morenko,
+  type=incollection,
+  heading=subbibliography,
+  title={Статьи в сборниках},
+]
+\printbibliography[%
+  keyword=konstantin-morenko,
+  type=patent,
+  heading=subbibliography,
+  title={Патенты и~заявки на изобретения},
+]
+\printbibliography[%
+  keyword=konstantin-morenko,
+  nottype=book, nottype=article, nottype=patent, nottype=collection, nottype=incollection,
+  heading=subbibliography,
+  title={Прочие труды},
+]
 
 \end{document}

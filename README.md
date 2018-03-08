@@ -16,4 +16,4 @@ be made with emacs command ~org-babel-tangle~, bound to keys
 TODO:
 
 - [ ] create Makefile to automatically process .org -> .bst -> .pdf
-
+- [ ] add «№» sign to journal issues

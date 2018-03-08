@@ -4,7 +4,7 @@
 #+DATE: <2017-07-25 Вт>
 #+LANGUAGE: ru
 #+COLUMNS: %25ITEM %2Count{+} %5Co-authors %3Condition %3Pages{+} %4Year %2Language %2Country
-#+PROPERTY: header-args:bibtex :tangle konstantin-morenko.bst.test
+#+PROPERTY: header-args:bibtex :tangle konstantin-morenko.bst
 
 * Общее оформление
 
@@ -28,11 +28,22 @@
 @Comment {email: me@konstantin-morenko.ru}
 #+END_SRC
 
+** Хранение
+
+Труды хранятся в папке, структура каталогов аналогично структуре в
+этом файле.  В папке каждого труда:
+- source/ :: исходные материалы, переписка и др.
+- pub/ :: опубликованный материал (PDF)
+
 ** PDF-файлы
 
-Каждый файл со статьей содержит вставленную первую страницу:
-- ссылка на страницу с научными трудами;
-- полная библиографическая ссылка на труд;
+Каждый файл со статьей содержит:
+- вставленную первую страницу:
+  - ссылка на страницу с научными трудами;
+  - полная библиографическая ссылка на труд;
+- титульный лист;
+- оглавление;
+- статью.
 
 * Список научных трудов
 
@@ -40,7 +51,7 @@
 
  #+BEGIN_SRC bibtex
  @Comment {DISS}
- #+END_SRC 
+ #+END_SRC
 
 *** Ветроэлектрическая установка с двухроторным генератором и стабилизацией частоты выходного напряжения
     :PROPERTIES:
@@ -62,23 +73,61 @@
     :Country:  Ru
     :END:
 
-** Книги, главы в книгах   
+** TODO Книги, главы в книгах
  #+BEGIN_SRC bibtex
  @Comment {BOOKS}
- #+END_SRC 
+ #+END_SRC
 
-** Патенты 
+*** Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development
+     :PROPERTIES:
+     :Count:    
+     :Condition: pub
+     :Co-authors: 
+     :Pages:    
+     :Year:     
+     :RISC:     
+     :VAC:      
+     :Language: 
+     :Country:  
+     :Magazine: 
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Collection{handbook-research-ren-energy-rural-2018,
+   title     = {Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development},
+   publisher = {?},
+   isbn      = {9781522538677},
+   doi       = {10.4018/978-1-5225-3867-7},
+   editor    = {Kharchenko, V. and Vasant, P.},
+   year      = {2018},
+   address   = {?},
+   pagetotal = {672},
+   media     = {text},
+   langid    = {english},
+  }
+  @Incollection{morenko-features-diff-wind-speeds,
+   keywords  = {konstantin-morenko},
+   author    = {Morenko, K. S. and Dorzhiev, S. S. and Bazarova, E. G.},
+   crossref  = {handbook-research-ren-energy-rural-2018},
+   title     = {The Features of the Work of Wind-Receiving Devices on Different Speeds of the Wind Flow},
+   pages     = {383---393},
+   doi       = {10.4018/978-1-5225-3867-7.ch016},
+   langid    = {english},
+  }
+#+END_SRC
+
+** Патенты
 
  #+BEGIN_SRC bibtex
  @Comment {PATENTS}
- #+END_SRC 
+ #+END_SRC
 
  #+BEGIN_SRC bibtex
  @Comment {International Patent Classification http://web2.wipo.int/classifications/ipc/ipcpub}
  #+END_SRC
 
-*** 2009   
-          
+*** 2009
+
 **** Двухроторный ветрогенератор
      :PROPERTIES:
      :Count:    1
@@ -106,10 +155,11 @@
   pagetotal = {7~c. : ил.},
   langid = {russian},
   media = {text},
+  url = {http://www.findpatent.ru/patent/243/2433301.html},
  }
- #+END_SRC 
+ #+END_SRC
 
-*** 2012   
+*** 2012
 
 **** Способ управления ветроэлектрической установкой и устройство для его осуществления
      :PROPERTIES:
@@ -120,7 +170,7 @@
      :Year:     2012
      :Language: Ru
      :Country:  Ru
-     :END:   
+     :END:
 
 #+BEGIN_SRC bibtex
 @Patent{patent-my-method-and-device,
@@ -142,41 +192,42 @@
  pagetotal = {7~c.~: ил.},
  langid = {russian},
  media = {text},
+ url  = {http://www.freepatent.ru/patents/2530194},
 }
 
 #+END_SRC
 
-** TODO Статьи   
+** TODO Статьи
    :PROPERTIES:
    :COLUMNS:  %25ITEM %5Co-authors %3Condition %3Pages{+} %4Year %2RISC{+} %2VAC{+} %2Language %2Country %15Magazine
    :END:
 
- Поля свойств для статей
+Поля свойств для статей
 
- #+BEGIN_SRC org
-   :PROPERTIES:
-   :Count:    1
-   :Condition: pub
-   :Co-authors: ?
-   :Pages:    3
-   :Year:     2012
-   :RISC:     0
-   :VAC:      0
-   :Language: Ru
-   :Country:  Ru
-   :Magazine: Тезисы МГАУ
-   :END:
- #+END_SRC
+#+BEGIN_SRC org
+  :PROPERTIES:
+  :Count:    1
+  :Condition: pub
+  :Co-authors: ?
+  :Pages:    3
+  :Year:     2012
+  :RISC:     0
+  :VAC:      0
+  :Language: Ru
+  :Country:  Ru
+  :Magazine: Тезисы МГАУ
+  :END:
+#+END_SRC
 
- #+BEGIN_SRC bibtex
- @Comment {ARTICLES}
- #+END_SRC 
+#+BEGIN_SRC bibtex
+  @Comment {ARTICLES}
+#+END_SRC
 
-*** 2011   
+*** 2011
 
- #+BEGIN_SRC bibtex
- @Comment {2011}
- #+END_SRC 
+#+BEGIN_SRC bibtex
+  @Comment {2011}
+#+END_SRC
 
 **** Выбор типа ветроэлектрического агрегата для автономного электроснабжения фермерского хозяйства
      :PROPERTIES:
@@ -192,31 +243,29 @@
      :Magazine: Сборник научных трудов ФГБОУ ВПО АЧГАА
      :END:
 
- #+BEGIN_SRC bibtex
- @Collection{el-tech-el-obor-achgaa-2011,
-  title     = {Электротехнологии и электрооборудование в сельскохозяйственном производстве},
-  subtitle  = {Сборник научных трудов ФГБОУ ВПО АЧГАА},
-  publisher = {ФГБОУ ВПО АЧГАА},
-  year      = {2011},
-  address   = {Зерноград},
-  volsorder = {iv},
-  issue     = {8},
-  volume    = {1},
-  media     = {text},
-  langid    = {russian},
- }
- @Incollection{morenko-select-type-wind-machine,
-  keywords  = {konstantin-morenko},
-  author    = {Моренко, К. С. and Моренко, С. А.},
-  crossref  = {el-tech-el-obor-achgaa-2011},
-  title     = {Выбор типа ветроэлектрического агрегата для автономного
-                   электроснабжения фермерского хозяйства},
-  pages     = {20--24},
-  langid    = {russian},
- }
- #+END_SRC
- 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Выбор_типа_ветроэлектрического_агрегата_для_автономного.tar.xz]]
+#+BEGIN_SRC bibtex
+  @Collection{el-tech-el-obor-achgaa-2011,
+   title     = {Электротехнологии и электрооборудование в сельскохозяйственном производстве},
+   subtitle  = {Сборник научных трудов ФГБОУ ВПО АЧГАА},
+   publisher = {ФГБОУ ВПО АЧГАА},
+   year      = {2011},
+   address   = {Зерноград},
+   volsorder = {iv},
+   issue     = {8},
+   volume    = {1},
+   media     = {text},
+   langid    = {russian},
+  }
+  @Incollection{morenko-select-type-wind-machine,
+   keywords  = {konstantin-morenko},
+   author    = {Моренко, К. С. and Моренко, С. А.},
+   crossref  = {el-tech-el-obor-achgaa-2011},
+   title     = {Выбор типа ветроэлектрического агрегата для автономного
+		    электроснабжения фермерского хозяйства},
+   pages     = {20--24},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Двухроторный электрогенератор для ветроустановки
      :PROPERTIES:
@@ -232,26 +281,24 @@
      :Magazine: Сборник Ставрополь
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Двухроторный_электрогенератор_для_ветроустановки.tar.xz]]
-
 #+BEGIN_SRC bibtex
-@Collection{stavropol-conf-2011,
- title = {Физико-технические проблемы создания новых экологически
-                  чистых технологий в агропромышленном комплексе},
- subtitle = {материалы VI Российской научно-практической конференции},
- publisher = {ставропольское издательство <<Параграф>>},
- year      = {2011},
- address   = {Ставрополь},
- media 	   = {text},
-}
-@Incollection{morenko-double-rotor-for-wind-plant,
- keywords  = {konstantin-morenko,scientific},
- author = {Моренко, К. С. and Степанчук, Г. В.},
- crossref = {stavropol-conf-2011},
- title = {Двухроторный электрогенератор для ветроустановки},
- pages = {153--159},
-}
-
+  @Collection{stavropol-conf-2011,
+   title = {Физико-технические проблемы создания новых экологически
+		    чистых технологий в агропромышленном комплексе},
+   subtitle = {материалы VI Российской научно-практической конференции},
+   publisher = {ставропольское издательство <<Параграф>>},
+   year      = {2011},
+   address   = {Ставрополь},
+   media 	   = {text},
+  }
+  @Incollection{morenko-double-rotor-for-wind-plant,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С. and Степанчук, Г. В.},
+   crossref = {stavropol-conf-2011},
+   title = {Двухроторный электрогенератор для ветроустановки},
+   pages = {153--159},
+   langid    = {russian},
+  }
 #+END_SRC
 
 **** Двухроторные электрические генераторы для ветроустановок
@@ -268,25 +315,35 @@
      :Magazine: Вестник АЧГАА
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Двухроторные_электрические_генераторы_для_ветроустановок.tar.xz]]
-
 #+BEGIN_SRC bibtex
-@Article{morenko-double-rotor-generator,
- keywords  = {konstantin-morenko,scientific},
- author    = {Моренко, К. С. and Степанчук, Г. В.},
- title     = {Двухроторные электрические генераторы для ветроустановок},
- journal   = {Вестник аграрной науки Дона},
- pages     = {66--73},
- number    = {2(14)},
- year      = {2011},
- language  = {russian},
- media     = {text},
-}
+  @Article{morenko-double-rotor-generator,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Двухроторные электрические генераторы для ветроустановок},
+   journal   = {Вестник аграрной науки Дона},
+   pages     = {66--73},
+   number    = {2(14)},
+   year      = {2011},
+   langid    = {russian},
+   media     = {text},
+  }
 #+END_SRC
 
-*** TODO 2012   
+*** 2012
 
-**** DONE Выбор основных параметров двухроторного генератора для ветроустановки
+**** Конференция МГАУ 2012
+
+#+BEGIN_SRC bibtex
+  @Collection{mgau-conf-2012,
+   title = {Пленарные доклады и~тезисы сообщений Международной научно-практической конференции <<Инновационные энергоресурсосберегающие технологии>>},
+   publisher = {ФГБОУ~ВПО~МГАУ},
+   year      = {2012},
+   address   = {М.},
+   media = {text},
+  }
+#+END_SRC
+
+***** Выбор основных параметров двухроторного генератора для ветроустановки
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -299,28 +356,44 @@
      :Magazine: Сборник трудов МГАУ
      :END:
 
- #+BEGIN_SRC bibtex
-   @Collection{mgau-conf-2012,
-    title = {Пленарные доклады и~тезисы сообщений Международной научно-практической конференции <<Инновационные энергоресурсосберегающие технологии>>},
-    publisher = {ФГБОУ~ВПО~МГАУ},
-    year      = {2012},
-    address   = {М.},
-    media = {text},
-   }
-   @Incollection{morenko-vibor-parametrov-dvuhrotor,
-    keywords  = {konstantin-morenko,scientific},
-    author = {Моренко, К. С.},
-    crossref = {mgau-conf-2012},
-    title = {Выбор основных параметров двухроторного генератора для ветроустановки},
-    pages = {134--136},
-   }
+#+BEGIN_SRC bibtex
+  @Incollection{morenko-vibor-parametrov-dvuhrotor,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С.},
+   crossref = {mgau-conf-2012},
+   title = {Выбор основных параметров двухроторного генератора для ветроустановки},
+   pages = {134--136},
+   langid    = {russian},
+  }
+#+END_SRC
 
- #+END_SRC
- Моренко,~К.~С. Выбор основных параметров двухроторного генератора для ветроустановки~[Текст]~/ К.~С.~Моренко~// Пленарные доклады и~тезисы сообщений Международной научно-практической конференции «Инновационные энергоресурсосберегающие технологии».~— М.: ФГБОУ ВПО МГАУ, 2012.~— С.~134–136.
+***** Основные результаты моделирования двухроторного генератора для ветроустановки
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Степанчук Г. В.
+     :Pages:    2
+     :Year:     2012
+     :RISC:     0
+     :VAC:      0
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Тезисы МГАУ
+     :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Выбор_основных_параметров.tar.xz]]
+#+BEGIN_SRC bibtex
+  @Incollection{morenko--modelling-results,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С. and Степанчук, Г. В.},
+   crossref = {mgau-conf-2012},
+   title = {Основные результаты моделирования двухроторного генератора
+		    для ветроустановки},
+   pages = {137--138},
+   langid    = {russian},
+  }
+#+END_SRC
 
-**** DONE Устойчивость работы ветроустановки на основе двухроторного генератора
+**** Устойчивость работы ветроустановки на основе двухроторного генератора
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -334,24 +407,25 @@
      :Magazine: Труды конференции ГНУ ВИЭСХ
      :END:
 
- #+BEGIN_SRC bibtex
-   @Collection{viesh-conf-2012,
-    title = {Энергообеспечение и~энергосбережение в сельском хозяйстве},
-    subtitle = {Труды 8-й Международной научно-технической конференции (16--17 мая 2012 года, г.~Москва, ГНУ~ВИЭСХ)},
-    publisher = {ГНУ~ВИЭСХ},
-    year      = {2012},
-    address   = {М.},
-    parts = {5},
-    media = {text},
-   }
-   @Incollection{morenko-ustoichivost-dvuhrotor,
-    keywords  = {konstantin-morenko,scientific},
-    author = {Моренко, К. С. and Степанчук, Г. В.},
-    crossref = {viesh-conf-2012},
-    title = {Устойчивость работы ветроустановки на основе двухроторного генератора},
-    pages = {168--173},
-   }
- #+END_SRC
+#+BEGIN_SRC bibtex
+  @Collection{viesh-conf-2012,
+   title = {Энергообеспечение и~энергосбережение в сельском хозяйстве},
+   subtitle = {Труды 8-й Международной научно-технической конференции (16--17 мая 2012 года, г.~Москва, ГНУ~ВИЭСХ)},
+   publisher = {ГНУ~ВИЭСХ},
+   year      = {2012},
+   address   = {М.},
+   parts = {5},
+   media = {text},
+  }
+  @Incollection{morenko-ustoichivost-dvuhrotor,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С. and Степанчук, Г. В.},
+   crossref = {viesh-conf-2012},
+   title = {Устойчивость работы ветроустановки на основе двухроторного генератора},
+   pages = {168--173},
+   langid    = {russian},
+  }
+#+END_SRC
 
  Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Устойчивость_работы_ветроустановки_на_основе_двухроторного.tar.xz]]
 
@@ -369,9 +443,28 @@
      :Magazine: Вестник Таврического Университета
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Обоснование_передаточного_числа_редуктора_для_двухроторного.tar.xz]]
-
- Моренко,~К.~С. Обоснование передаточного числа редуктора для двухроторного электрического генератора ветроустановки [Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Науковий вiсник Таврiйського державного агротехнологiчного унiверситету.~— Мелiтополь: ТДАТУ, 2012.~— Вып.~2, Т.~4.~— С.~159–164.
+#+BEGIN_SRC bibtex
+  @Collection{ukraine-conf-2012,
+   title = {Науковий вiсник Таврiйського державного агротехнологiчного унiверситету},
+   publisher = {ТДАТУ},
+   year      = {2012},
+   address   = {Мелiтополь},
+   media 	   = {text},
+   issue     = {2},
+   volume    = {4},
+   volsorder = {iv},
+  }
+  @Incollection{morenko-reducer,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Обоснование передаточного числа редуктора для
+		    двухроторного электрического генератора
+		    ветроустановки},
+   crossref = {ukraine-conf-2012},
+   pages     = {159--164},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Выбор факторов при планировании экспериментальных исследований ветроустановки на базе двухроторного генератора
      :PROPERTIES:
@@ -386,9 +479,28 @@
      :Magazine: Сборник Донская конференция
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Выбор_факторов_при_планировании_экспериментальных_исследований.tar.xz]]
-
- Моренко,~К.~С. Выбор факторов при планировании экспериментальных исследований ветроустановки на базе двухроторного генератора [Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Донская аграрная научно-практическая конференция «Инновационные пути развития агропромышленного комплекса: задачи и~перспективы»: международный сборник научных трудов~// Высокоэффективные технологии и~технические средства в~сельском хозяйстве.~— Зерноград: ФГБОУ ВПО АЧГАА, 2012.~— С.~159–162.
+#+BEGIN_SRC bibtex
+  @Collection{achgaa-conf-2012,
+   title = {Донская аграрная научно-практическая конференция
+		    <<Инновационные пути развития агропромышленного
+		    комплекса: задачи и перспективы>>},
+   subtitle = {международный сборник научных трудов},
+   publisher = {ФГБОУ ВПО АЧГАА},
+   year      = {2012},
+   address   = {Зерноград},
+   media 	   = {text},
+  }
+  @Incollection{morenko-factors,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С. and Степанчук, Г. В.},
+   crossref = {achgaa-conf-2012},
+   title = {Выбор факторов при планировании экспериментальных
+		    исследований ветроустановки на базе двухроторного
+		    генератора},
+   pages = {159--162},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Результаты исследования двухроторного генератора для ветроустановки на математической модели
      :PROPERTIES:
@@ -404,9 +516,25 @@
      :Magazine: Сборник СКНИИМЭСХ
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Результаты_исследования_двухроторного_генератора_для_ветроустановки.tar.xz]]
-
- Моренко,~К.~С. Результаты исследования двухроторного генератора для ветроустановки на математической модели [Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Инновации в~животноводстве: разработка, исследования, испытания.~— Зерноград: СКНИИМЭСХ, 2012.~— С.~101–104.
+#+BEGIN_SRC bibtex
+  @Collection{skniimesh-conf-2012,
+   title     = {Инновации в~животноводстве},
+   subtitle  = {разработка, исследования, испытания},
+   publisher = {СКНИИМЭСХ},
+   year      = {2012},
+   address   = {Зерноград},
+   media 	   = {text},
+  }
+  @Incollection{morenko-modelling-research,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Результаты исследования двухроторного генератора для
+		    ветроустановки на математической модели},
+   crossref  = {skniimesh-conf-2012},
+   pages     = {101--104},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Расчёт регулировочной характеристики лопастного ветроколеса
      :PROPERTIES:
@@ -421,33 +549,34 @@
      :Magazine: Сборник Ставрополя
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Расчёт_регулировочной_характеристики_лопастного_ветроколеса.tar.xz]]
+#+BEGIN_SRC bibtex
+@Collection{stavropol-conf-2012,
+ title = {Новые технологии в сельском хозяйстве и пищевой
+                  промышленности с использованием электрофизических
+                  факторов и озона},
+ subtitle = {материалы VII Всероссийской научно-практической
+                  конференции (г. Ставрополь, 15--18 мая 2012 года)},
+ publisher = {ставропольское издательство <<Параграф>>},
+ year      = {2012},
+ address   = {Ставрополь},
+ media 	   = {text},
+}
+@Incollection{morenko--matlab,
+ keywords  = {konstantin-morenko,scientific},
+ author = {Моренко, К. С.},
+ crossref = {stavropol-conf-2012},
+ title = {Расчёт регулировочной характеристики лопастного ветроколеса
+                  для двухроторного генератора средствами MatLab},
+ pages = {53--56},
+ langid    = {russian},
+}
+#+END_SRC
 
- Моренко,~К.~С. Расчёт регулировочной характеристики лопастного ветроколеса для двухроторного генератора средствами MatLab~/ К.~С.~Моренко~// Новые технологии в~сельском хозяйстве и~пищевой промышленности с~использованием электрофизических факторов и~озона: материалы VII Всероссийской научно-практической конференции (г.~Ставрополь, 15–18 мая 2012 года).~— Ставрополь: ставропольское издательство «Параграф», 2012.~— С.~53-56.
+*** 2013
 
-**** Основные результаты моделирования двухроторного генератора для ветроустановки
-     :PROPERTIES:
-     :Count:    1
-     :Condition: pub
-     :Co-authors: Степанчук Г. В.
-     :Pages:    2
-     :Year:     2012
-     :RISC:     0
-     :VAC:      0
-     :Language: Ru
-     :Country:  Ru
-     :Magazine: Тезисы МГАУ
-     :END:
-
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Основные_результаты_моделирования_двухроторного_генератора.tar.xz]]
-
- Моренко,~К.~С. Основные результаты моделирования двухроторного генератора для ветроустановки [Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Пленарные доклады и~тезисы сообщений Международной научно-практической конференции «Инновационные энергоресурсосберегающие технологии».~— М.:~ФГБОУ ВПО МГАУ, 2012.~— С.~137–138.
-
-*** TODO 2013   
-
-    #+BEGIN_SRC bibtex
-      @Comment {2013}
-    #+END_SRC 
+#+BEGIN_SRC bibtex
+  @Comment {2013}
+#+END_SRC
 
 **** Анализ потребности в электроэнергии малых потребителей
      :PROPERTIES:
@@ -477,9 +606,20 @@
      :Magazine: Инновации в сельском хозяйстве
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Выбор_рабочей_скорости_ветра_ветроустановки.tar/xz]]
-
- Моренко,~К.~С. Выбор рабочей скорости ветра ветроустановки на базе двухроторного генератора~[Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Инновации в~сельском хозяйстве.~— М.:~ГНУ ВИЭСХ.~— 2013.~— №~1~(3).~— С.~66–70.
+#+BEGIN_SRC bibtex
+  @Article{morenko-vybor-skorosti,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Выбор рабочей скорости ветра ветроустановки на базе
+		    двухроторного генератора},
+   journal   = {Инновации в~сельском хозяйстве},
+   pages     = {66--70},
+   number    = {1(3)},
+   year      = {2013},
+   langid    = {russian},
+   url       = {http://ej.viesh.ru/wp-content/uploads/2015/03/201301.pdf},
+  }
+#+END_SRC
 
 **** Улучшение режима работы ветроколеса ветроустановки применением двухроторного генератора
      :PROPERTIES:
@@ -495,9 +635,28 @@
      :Magazine: Сборник ФГБОУ ВПО АЧГАА
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Выбор_основных_параметров.tar.xz]]
-
- Моренко,~К.~С. Улучшение режима работы ветроколеса ветроустановки применением двухроторного генератора~[Текст]~/ К.~С.~Моренко, Г.~В.~Степанчук~// Разработка инновационных технологий и~технических средств для АПК. Сборник научных трудов 8-й международной научно-практической конференции «Инновационные разработки для АПК» (28-29 марта 2013 года, г.~Зерноград).~— Зерноград: ГНУ СКНИИМЭСХ Россельхозакадемии, 2013.~— С.~203–206.
+#+BEGIN_SRC bibtex
+  @Collection{skniimesh-conf-2013,
+   title     = {Разработка инновационных технологий и технических
+		    средств для АПК},
+   subtitle  = {Сборник научных трудов 8-й международной научно-
+		    практической конференции <<Инновационные разработки
+		    для АПК>> (28--29 марта 2013 года, г. Зерноград)},
+   publisher = {ГНУ СКНИИМЭСХ},
+   year      = {2013},
+   address   = {Зерноград},
+   media 	   = {text},
+  }
+  @Incollection{morenko-better-wheel-mode,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Улучшение режима работы ветроколеса ветроустановки
+		    применением двухроторного генератора},
+   crossref = {skniimesh-conf-2013},
+   pages     = {203--206},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Оценка влияния нестабильности ветрового потока на частоту вращения ветроколеса в ходе экспериментальных исследований
      :PROPERTIES:
@@ -512,25 +671,23 @@
      :Magazine: Электронный журнал КубГАУ
      :END:
 
- #+BEGIN_SRC bibtex
- @article{morenko-evaluation-unstability-rotation-speed,
-  keywords  = {konstantin-morenko},
-  author    = {Моренко, К. С.},
-  title     = {Оценка влияния нестабильности ветрового потока на
-                   частоту вращения ветроколеса в ходе
-                   экспериментальных исследований},
-  journal   = {Политематический сетевой электронный научный журнал
-                   Кубанского государственного аграрного университета},
-  pages     = {343--355},
-  number    = {90},
-  year      = {2013},
-  langid    = {russian},
-  media     = {text},
-  url       = {http://ej.kubagro.ru/2013/06/pdf/02.pdf},
- }
- #+END_SRC
-
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Оценка_влияния_нестабильности_ветрового_потока.tar/xz]]
+#+BEGIN_SRC bibtex
+  @Article{morenko-evaluation-unstability-rotation-speed,
+   keywords  = {konstantin-morenko},
+   author    = {Моренко, К. С.},
+   title     = {Оценка влияния нестабильности ветрового потока на
+		    частоту вращения ветроколеса в ходе
+		    экспериментальных исследований},
+   journal   = {Политематический сетевой электронный научный журнал
+		    Кубанского государственного аграрного университета},
+   pages     = {343--355},
+   number    = {90},
+   year      = {2013},
+   langid    = {russian},
+   media     = {text},
+   url       = {http://ej.kubagro.ru/2013/06/pdf/02.pdf},
+  }
+#+END_SRC
 
 **** Использование низкокачественной электроэнергии ветроэлектростанции с двухроторным генератором
      :PROPERTIES:
@@ -546,9 +703,20 @@
      :Magazine: Вестник ВИЭСХ
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Использование_низкокачественной_электроэнергии_ветроэлектростанции_с_двухроторным.tar.xz]]
-
- Моренко,~К.~С. Использование низкокачественной электроэнергии ветроэлектростанции с~двухроторным генератором~/ К.~С.~Моренко, Г.~В.~Степанчук~// Инновации в~сельском хозяйстве.~— М.:~ГНУ ВИЭСХ.~— 2013.~— №~1~(3).~— С.~63–65.
+#+BEGIN_SRC bibtex
+  @Article{morenko-low-quality,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Использование низкокачественной электроэнергии
+		    ветроэлектростанции с~двухроторным генератором},
+   journal   = {Инновации в~сельском хозяйстве},
+   pages     = {63--65},
+   number    = {1(3)},
+   year      = {2013},
+   langid    = {russian},
+   url       = {http://ej.viesh.ru/wp-content/uploads/2015/03/201301.pdf},
+  }
+#+END_SRC
 
 **** Перспективы применения двухроторного генератора для ветроустановки с управляемым углом атаки лопасти
      :PROPERTIES:
@@ -563,11 +731,23 @@
      :Magazine: Вестник ВИЭСХ
      :END:
 
- Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Перспективы_применения_двухроторного_генератора_для_ветроустановки.tar.xz]]
+#+BEGIN_SRC bibtex
+  @Article{morenko-perspectives,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   title     = {Перспективы применения двухроторного генератора для
+		    ветроустановки с управляемым углом атаки лопасти},
+   journal   = {Вестник ВИЭСХ},
+   pages     = {71--73},
+   number    = {2(11)},
+   year      = {2013},
+   langid    = {russian},
+   media     = {text},
+   url       = {http://vestnik.viesh.ru/wp-content/uploads/2015/03/2013-02.pdf},
+  }
+#+END_SRC
 
- Моренко,~К.~С. Перспективы применения двухроторного генератора для ветроустановки с~управляемым углом атаки лопасти~/ К.~С.~Моренко~// Вестник ВИЭСХ.~— М.:~ГНУ ВИЭСХ, 2013.~— №~2~(11).~— С.~71–73.
-
-*** TODO 2014   
+*** 2014
 **** Оптимизация режима работы малой ветроустановки регулированием угла атаки лопасти
      :PROPERTIES:
      :Count:    1
@@ -581,6 +761,21 @@
      :Country:  Ru
      :Magazine: Механизация и электрификация сельского хозяйства
      :END:
+
+#+BEGIN_SRC bibtex
+  @ARTICLE{morenko-optimiz,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Оптимизация режима работы малой ветроустановки
+		    регулированием угла атаки лопасти},
+   journal   = {Механизация и электрификация сельского хозяйства},
+   pages     = {26--27},
+   number    = {2},
+   year      = {2014},
+   langid    = {russian},
+   media = {text},
+  }
+#+END_SRC
 
  Archive: [[~/ROOT/documents/science/Научные_труды/Статьи/Оптимизация_режима_работы_малой_ветроустановки.tar/xz]]
 
@@ -597,26 +792,63 @@
      :Language: Ru
      :Country:  Ru
      :Magazine: Возобновляемая и малая энергетика 2014
-     :END:   
+     :END:
 
-*** TODO 2015   
+#+BEGIN_SRC bibtex
+  @Collection{moscow-energy-2014,
+   title = {Возобновляемая и малая энергетика 2014},
+   subtitle = {Сборник трудов XI Международной ежегодной конференции, в
+		    рамках 23-й Международной выставки
+		    <<Электрооборудование для энергетики и
+		    электротехники. Автоматизация. Промышленная
+		    светотехника>>},
+   publisher = {Комитет ВИЭ РосСНИО},
+   year      = {2014},
+   address   = {Москва},
+   media 	   = {text},
+  }
+  @Incollection{morenko-model-moscow,
+   keywords  = {konstantin-morenko,scientific},
+   author = {Моренко, К. С.},
+   crossref = {moscow-energy-2014},
+   title = {Математического модель двухроторного генератора для ветроустановки},
+   pages = {168--172},
+   langid    = {russian},
+  }
+#+END_SRC
 
- #+BEGIN_SRC bibtex
- @Comment {2015}
- #+END_SRC 
+*** TODO 2015
 
-**** Алгоритмы автоматизации свч-генераторов малой мощности установки для обработки зернового материала
+#+BEGIN_SRC bibtex
+  @Comment {2015}
+#+END_SRC
+
+**** Алгоритмы автоматизации СВЧ-генераторов малой мощности установки для обработки зернового материала
      :PROPERTIES:
      :Count:    1
      :Condition: pub
-     :Pages:    4
+     :Pages:    5
      :Year:     2015
      :RISC:     1
      :VAC:      0
      :Language: Ru
      :Country:  Ru
      :Magazine: Инновации в сельском хозяйстве
-     :END:   
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-shf-gen-algo-for-seed-processing,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Алгоритмы автоматизации СВЧ-генераторов малой мощности
+		    установки для обработки зернового материала},
+   journal   = {Инновации в~сельском хозяйстве},
+   pages     = {99--103},
+   number    = {3},
+   year      = {2015},
+   langid    = {russian},
+  }
+#+END_SRC
 
 **** Определение количества аккумуляторных батарей для резервного электроснабжения при использовании совместно с возобновляемым источником энергии
      :PROPERTIES:
@@ -631,34 +863,30 @@
      :Magazine: Актуальные вопросы технических наук
      :END:
 
- #+BEGIN_SRC bibtex
- @collection{tech-conf-piter-2015,
-  title     = {Актуальные вопросы технических наук в современных
-                   условиях},
-  subtitle  = {Сборник научных трудов по итогам международной
-                   научно-практической конференции (14 января 2015~г.)},
-  publisher = {ИЦРОН},
-  year      = {2015},
-  address   = {СПб.},
-  issue     = {2},
-  media     = {text},
-  langid    = {russian},
- }
- @incollection{morenko-number-of-batteries-for-renewable,
-  keywords  = {konstantin-morenko},
-  author    = {Моренко, К. С.},
-  crossref  = {tech-conf-piter-2015},
-  title     = {Определение количества аккумуляторных батарей для
-                   резервного электроснабжения при использовании
-                   совместно с возобновляемым источником энергии},
-  pages     = {87--90},
-  langid    = {russian},
- }
- #+END_SRC
-
- Folder: [[~/ROOT/documents/science/Научные_труды/Статьи/Определение_количества_аккумуляторов.tar.xz]]
-
- izron.ru  
+#+BEGIN_SRC bibtex
+  @Collection{tech-conf-piter-2015,
+   title     = {Актуальные вопросы технических наук в современных
+		    условиях},
+   subtitle  = {Сборник научных трудов по итогам международной
+		    научно-практической конференции (14 января 2015~г.)},
+   publisher = {ИЦРОН},
+   year      = {2015},
+   address   = {СПб.},
+   issue     = {2},
+   media     = {text},
+  }
+  @Incollection{morenko-number-of-batteries-for-renewable,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   crossref  = {tech-conf-piter-2015},
+   title     = {Определение количества аккумуляторных батарей для
+		    резервного электроснабжения при использовании
+		    совместно с возобновляемым источником энергии},
+   pages     = {87--90},
+   langid    = {russian},
+   url       = {http://izron.ru/articles/aktualnye-voprosy-tekhnicheskikh-nauk-v-sovremennykh-usloviyakh-sbornik-nauchnykh-trudov-po-itogam-m/sektsiya-5-energetika-i-energeticheskie-tekhnika-i-tekhnologii-spetsialnost-05-14-00/opredelenie-kolichestva-akkumulyatornykh-batarey-dlya-rezervnogo-elektrosnabzheniya-pri-ispolzovanii/},
+  }
+#+END_SRC
 
 **** Векторная диаграмма работы двухроторного генератора
      :PROPERTIES:
@@ -673,9 +901,20 @@
      :Magazine: Вестник ВИЭСХ
      :END:
 
- Folder: [[~/ROOT/documents/science/Научные_труды/Статьи/Векторная_диаграмма_работы]]
+#+BEGIN_SRC bibtex
+  @Article{morenko-vector-diagram,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   title     = {Векторная диаграмма работы двухроторного генератора},
+   journal   = {Инновации в~сельском хозяйстве},
+   pages     = {83--86},
+   number    = {1(11)},
+   year      = {2015},
+   langid    = {russian},
+  }
+#+END_SRC
 
-**** Векторная диаграмма и моделирование
+**** TODO Векторная диаграмма и моделирование
      :PROPERTIES:
      :Condition: dra
      :Co-authors: ?
@@ -690,7 +929,7 @@
 
  Folder: [[~/ROOT/documents/science/Научные_труды/Статьи/Векторная_диаграмма_и_моделирование]]
 
-**** Применение цепей маркова при прогнозировании динамики скорости ветра
+**** Применение цепей Маркова при прогнозировании динамики скорости ветра
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -701,9 +940,24 @@
      :Language: Ru
      :Country:  Ru
      :Magazine: Вестник Аграрной науки Дона
-     :END:   
+     :END:
 
-**** Модульный автоматизированный комплекс гелиоводонагревательной установки для сельскохозяйственных объектов
+#+BEGIN_SRC bibtex
+  @Article{morenko-markov-chains,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   title     = {Применение цепей Маркова при прогнозировании динамики скорости ветра},
+   journal   = {Вестник аграрной науки Дона},
+   pages     = {20--26},
+   number    = {32},
+   year      = {2015},
+   volume    = {4},
+   langid    = {russian},
+   media     = {text},
+  }
+#+END_SRC
+
+**** TODO Модульный автоматизированный комплекс гелиоводонагревательной установки для сельскохозяйственных объектов
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -715,7 +969,24 @@
      :Language: Ru
      :Country:  Ru
      :Magazine: Политематический сетевой электронный научный журнал кубанского государственного аграрного университета
-     :END:   
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-modular-automated-heliocomplex,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Газалов, В. С. and Беленов, В. Н. and
+		    Брагинец, А. В.},
+   title     = {Модульный автоматизированный комплекс
+		    гелиоводонагревательной установки для
+		    сельскохозяйственных объектов},
+   pages     = {636--651},
+   number    = {113},
+   year      = {2015},
+   langid    = {russian},
+   media     = {text},
+   url       = {},
+  }
+#+END_SRC
 
 **** Распределённые электрические сети с генераторами на основе возобновляемых источников энергии
      :PROPERTIES:
@@ -728,9 +999,31 @@
      :Language: Ru
      :Country:  Ru
      :Magazine: Возобновляемая и малая энергетика 2015
-     :END:   
+     :END:
 
-*** TODO 2016   
+#+BEGIN_SRC bibtex
+  @Collection{renewable-small-energy-2015,
+   title     = {Возобновляемая и малая энергетика — 2015. Сборник трудов
+                    XII Международной ежегодной конференции в рамках
+                    25-й Международной выставки «Электро-2015»},
+   year      = {2015},
+   address   = {М.},
+   media           = {text},
+  }
+  @Incollection{morenko-distributed-networks-with-renewables,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   title     = {Распределённые электрические сети с генераторами на
+                    основе возобновляемых источников энергии},
+   crossref = {renewable-small-energy-2015},
+   pages     = {177--180},
+   langid    = {russian},
+   url       = {https://yadi.sk/i/YoxzJZ5U3PGNtu},
+  }
+#+END_SRC
+
+
+*** TODO 2016
 
 **** Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов
      :PROPERTIES:
@@ -745,3 +1038,48 @@
      :Country:  Ru
      :Magazine: Политематический сетевой электронный научный журнал кубанского государственного аграрного университета
      :END:
+
+Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов
+
+Политематический сетевой электронный научный журнал Кубанского государственного аграрного университета. — 2016. — №115. — С. 691–706
+
+*** TODO 2017
+
+#+BEGIN_SRC bibtex
+  @Comment {2017}
+#+END_SRC
+
+**** TODO Устройство для контроля параметров молока ВИЭСХ
+
+**** TODO Глава в американскую книгу
+
+**** Влияние конструктивных параметров ветроприемных устройств при работе малых ветроустановок на низких скоростях ветрового потока
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Pages:    3
+     :Year:     2017
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Вестник ВИЭСХ
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-konstruktivnie-parametry-malyh-vetroustanovok,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Доржиев, С. С. and Базарова, Е. Г. and Серебряков, Р. А.},
+   title     = {Влияние конструктивных параметров ветроприемных
+                    устройств при работе малых ветроустановок на низких
+                    скоростях ветрового потока},
+   journal   = {Вестник ВИЭСХ},
+   issn      = {2304-5868},
+   pages     = {79--82},
+   number    = {4(29)},
+   year      = {2017},
+   langid    = {russian},
+   url       = {https://elibrary.ru/item.asp?id=32438519},
+  }
+#+END_SRC
+
