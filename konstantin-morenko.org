@@ -112,6 +112,7 @@
    title     = {The Features of the Work of Wind-Receiving Devices on Different Speeds of the Wind Flow},
    pages     = {383---393},
    doi       = {10.4018/978-1-5225-3867-7.ch016},
+   url       = {https://www.igi-global.com/chapter/the-features-of-the-work-of-wind-receiving-devices-on-different-speeds-of-the-wind-flow/201346},
    langid    = {english},
   }
 #+END_SRC
