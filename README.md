@@ -17,3 +17,7 @@ TODO:
 
 - [ ] create Makefile to automatically process .org -> .bst -> .pdf
 - [ ] add «№» sign to journal issues
+- [ ] add descriptions of the tools
+  - [ ] LaTeX
+  - [ ] Biblatex-Gost
+- [ ] list according VAK
