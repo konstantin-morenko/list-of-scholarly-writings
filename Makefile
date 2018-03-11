@@ -1,8 +1,8 @@
 LATEX_AUX=*.aux *.bbl *.bcf *.blg *.log *.run.xml
 
-all: bst latexmk
+all: konstantin-morenko.bst latexmk
 
-bst:
+konstantin-morenko.bst: konstantin-morenko.org
 	emacs --script org2bst.el
 
 latexmk:
