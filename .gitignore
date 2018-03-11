@@ -1,2 +1,23 @@
 # Emacs backup files
 *~
+
+# Generated .bst
+*.bst
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.pdf
+
+# pdflatex generated files
+*.run.xml
+
+# latexmk generated files
+*.fdb_latexmk
+*.fls
+
+# GitHub pages files
+# docs/
