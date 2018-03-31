@@ -1,4 +1,7 @@
-LATEX_AUX=*.aux *.bbl *.bcf *.blg *.log *.run.xml
+LATEX_AUX = *.aux *.bbl *.bcf *.blg *.log *.run.xml
+PDFLATEX_AUX = *.run.xml
+LATEXMK_AUX = *.fdb_latexmk *.fls
+AUX_FILES = $(LATEX_AUX) $(PDFLATEX_AUX) $(LATEXMK_AUX)
 
 all: konstantin-morenko.bst latexmk
 
@@ -14,8 +17,8 @@ pdf:
 biber:
 	biber konstantin-morenko.bcf
 
-clear:
-	rm $(LATEX_AUX)
+clean:
+	rm $(AUX_FILES)
 
 articles:
 	./parse-biblatex-to-yml.py > site/_data/articles.yml
