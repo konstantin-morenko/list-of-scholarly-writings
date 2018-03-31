@@ -93,19 +93,19 @@
      :END:
 
 #+BEGIN_SRC bibtex
-  @Collection{handbook-research-ren-energy-rural-2018,
+  @Book{handbook-research-ren-energy-rural-2018,
    title     = {Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development},
-   publisher = {?},
+   publisher = {IGI Global},
    isbn      = {9781522538677},
    doi       = {10.4018/978-1-5225-3867-7},
    editor    = {Kharchenko, V. and Vasant, P.},
    year      = {2018},
-   address   = {?},
+   address   = {USA, PA, Hershey},
    pagetotal = {672},
    media     = {text},
    langid    = {english},
   }
-  @Incollection{morenko-features-diff-wind-speeds,
+  @Inbook{morenko-features-diff-wind-speeds,
    keywords  = {konstantin-morenko},
    author    = {Morenko, K. S. and Dorzhiev, S. S. and Bazarova, E. G.},
    crossref  = {handbook-research-ren-energy-rural-2018},
