@@ -1084,7 +1084,7 @@
      :END:
 
 #+BEGIN_SRC bibtex
-  @Article{morenko-modular-automated-heliocomplex,
+  @Article{morenko-automatization-heliocomplex-agricultural,
    keywords  = {konstantin-morenko,scientific},
    author    = {Моренко, К. С. and Газалов, В. С. and Беленов, В. Н. and
                     Брагинец, А. В.},
@@ -1100,9 +1100,6 @@
    url       = {http://ej.kubagro.ru/2016/01/pdf/42.pdf},
   }
 #+END_SRC
-Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов
-
-Политематический сетевой электронный научный журнал Кубанского государственного аграрного университета. — 2016. — №115. — С. 691–706
 
 *** TODO 2017
 
