@@ -3,13 +3,11 @@ PDFLATEX_AUX = *.run.xml
 LATEXMK_AUX = *.fdb_latexmk *.fls
 AUX_FILES = $(LATEX_AUX) $(PDFLATEX_AUX) $(LATEXMK_AUX)
 
-all: konstantin-morenko.bst latexmk
+konstantin-morenko.pdf: konstantin-morenko.bst konstantin-morenko.tex
+	latexmk -pdf konstantin-morenko.tex
 
 konstantin-morenko.bst: konstantin-morenko.org
 	emacs --script org2bst.el
-
-latexmk:
-	latexmk -pdf konstantin-morenko.tex
 
 pdf:
 	pdflatex konstantin-morenko.tex
