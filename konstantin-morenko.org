@@ -1,14 +1,14 @@
 #+TITLE: Список научных трудов Моренко К. С.
 #+EMAIL: me@konstantin-morenko.ru
 #+AUTHOR: Моренко К. С.
-#+DATE: <2017-07-25 Вт>
+#+DATE: <2018-03-15 Чт>
 #+LANGUAGE: ru
 #+COLUMNS: %25ITEM %2Count{+} %5Co-authors %3Condition %3Pages{+} %4Year %2Language %2Country
 #+PROPERTY: header-args:bibtex :tangle konstantin-morenko.bst
 
 * Общее оформление
 
-Экспорт ~.bst~ вручную выполняется с помощью клавиш ~C-c C-v t~
+Экспорт ~.bst~ вручную выполняется с помощью клавиш ~C-c C-v t~.
 
 Именование записей: ~morenko-*~
 
@@ -47,7 +47,7 @@
 
 * Список научных трудов
 
-** TODO Диссертация, автореферат
+** Диссертация, автореферат
 
  #+BEGIN_SRC bibtex
  @Comment {DISS}
@@ -63,22 +63,62 @@
     :Country:  Ru
     :END:
 
+#+BEGIN_SRC bibtex
+  @Thesis{morenko-diss-tech,
+   keywords  = {konstantin-morenko,scientific},
+   type      = {phdthesis},
+   author    = {Моренко, К. С.},
+   title     = {Ветроэлектрическая установка с двухроторным генератором
+                    и стабилизацией частоты выходного напряжения},
+   science   = {техн. наук},
+   specialitycode = {05.14.08},
+   speciality = {Энергоустановки на основе возобновляемых видов энергии},
+   titleaddon = {защищена 11.11.2014 : утверждена 03.03.2015},
+   location = {М.},
+   addendum = {Библиогр.: с. 121--133},
+   pagetotal = {138},
+   year      = {2014},
+   langid    = {russian},
+   media     = {text},
+  }
+#+END_SRC
 *** Ветроэлектрическая установка с двухроторным генератором и стабилизацией частоты выходного напряжения
     :PROPERTIES:
     :Count:    1
-    :Condition: the
+    :Condition: autoref
     :Pages:    19
     :Year:     2014
     :Language: Ru
     :Country:  Ru
     :END:
 
-** TODO Книги, главы в книгах
+#+BEGIN_SRC bibtex
+  @Thesis{morenko-autoref-tech,
+   keywords  = {konstantin-morenko,scientific},
+   type      = {phdautoref},
+   author    = {Моренко, К. С.},
+   title     = {Ветроэлектрическая установка с двухроторным генератором
+                    и стабилизацией частоты выходного напряжения},
+   science   = {техн. наук},
+   specialitycode = {05.14.08},
+   speciality = {Энергоустановки на основе возобновляемых видов энергии},
+   location = {М.},
+   publisher = {Всероссийский научно-исследовательский институт
+                    электрификации сельского хозяйства},
+   pagetotal = {19},
+   year      = {2014},
+   langid    = {russian},
+   media     = {text},
+   url       = {http://vak.ed.gov.ru/az/server/php/filer.php?table=att_case&fld=autoref&key[]=165203},
+  }
+#+END_SRC
+
+** Книги, главы в книгах
  #+BEGIN_SRC bibtex
  @Comment {BOOKS}
  #+END_SRC
 
-*** Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development
+*** Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development :scopus:
      :PROPERTIES:
      :Count:    
      :Condition: pub
@@ -106,7 +146,7 @@
    langid    = {english},
   }
   @Inbook{morenko-features-diff-wind-speeds,
-   keywords  = {konstantin-morenko},
+   keywords  = {konstantin-morenko,scopus},
    author    = {Morenko, K. S. and Dorzhiev, S. S. and Bazarova, E. G.},
    crossref  = {handbook-research-ren-energy-rural-2018},
    title     = {The Features of the Work of Wind-Receiving Devices on Different Speeds of the Wind Flow},
@@ -840,7 +880,7 @@
 #+BEGIN_SRC bibtex
   @Article{morenko-shf-gen-algo-for-seed-processing,
    keywords  = {konstantin-morenko,scientific},
-   author    = {Моренко, К. С. and Степанчук, Г. В.},
+   author    = {Моренко, К. С.},
    title     = {Алгоритмы автоматизации СВЧ-генераторов малой мощности
 		    установки для обработки зернового материала},
    journal   = {Инновации в~сельском хозяйстве},
@@ -958,7 +998,7 @@
   }
 #+END_SRC
 
-**** TODO Модульный автоматизированный комплекс гелиоводонагревательной установки для сельскохозяйственных объектов
+**** Модульный автоматизированный комплекс гелиоводонагревательной установки для сельскохозяйственных объектов
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -976,16 +1016,19 @@
   @Article{morenko-modular-automated-heliocomplex,
    keywords  = {konstantin-morenko,scientific},
    author    = {Моренко, К. С. and Газалов, В. С. and Беленов, В. Н. and
-		    Брагинец, А. В.},
+                    Брагинец, А. В.},
    title     = {Модульный автоматизированный комплекс
-		    гелиоводонагревательной установки для
-		    сельскохозяйственных объектов},
+                    гелиоводонагревательной установки для
+                    сельскохозяйственных объектов},
+   journal   = {Политематический сетевой электронный научный журнал
+                    кубанского государственного аграрного университета},
+   publisher = {Кубанский государственный аграрный университет имени И. Т. Трубилина},
    pages     = {636--651},
    number    = {113},
    year      = {2015},
    langid    = {russian},
    media     = {text},
-   url       = {},
+   url       = {http://ej.kubagro.ru/2015/09/pdf/47.pdf},
   }
 #+END_SRC
 
@@ -1024,7 +1067,7 @@
 #+END_SRC
 
 
-*** TODO 2016
+*** 2016
 
 **** Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов
      :PROPERTIES:
@@ -1040,6 +1083,23 @@
      :Magazine: Политематический сетевой электронный научный журнал кубанского государственного аграрного университета
      :END:
 
+#+BEGIN_SRC bibtex
+  @Article{morenko-modular-automated-heliocomplex,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Газалов, В. С. and Беленов, В. Н. and
+                    Брагинец, А. В.},
+   title     = {Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов},
+   journal   = {Политематический сетевой электронный научный журнал
+                    кубанского государственного аграрного университета},
+   publisher = {Кубанский государственный аграрный университет имени И. Т. Трубилина},
+   pages     = {691-706},
+   number    = {115},
+   year      = {2016},
+   langid    = {russian},
+   media     = {text},
+   url       = {http://ej.kubagro.ru/2016/01/pdf/42.pdf},
+  }
+#+END_SRC
 Аппаратные средства автоматизации гелиоводоподогрева сельскохозяйственных объектов
 
 Политематический сетевой электронный научный журнал Кубанского государственного аграрного университета. — 2016. — №115. — С. 691–706
