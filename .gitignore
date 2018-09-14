@@ -11,8 +11,6 @@
 *.blg
 *.log
 *.pdf
-# exclude final pdf
-!konstantin-morenko.pdf
 
 # pdflatex generated files
 *.run.xml

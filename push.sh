@@ -11,8 +11,7 @@ setup_git() {
 commit_pdfs() {
   git checkout --orphan "travis"
   git rm --cached $(git ls-files)
-  echo `ls tests`
-  git add konstantin-morenko.pdf konstantin-morenko.bst
+  git add -f konstantin-morenko.pdf konstantin-morenko.bst
   echo `git status`
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
