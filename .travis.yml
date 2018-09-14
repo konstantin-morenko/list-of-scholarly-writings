@@ -1,0 +1,14 @@
+sudo: require
+dist: xenial
+language: bash
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-cyrillic texlive-bibtex-extra emacs25
+script:
+  - bash make
+branches:
+  only:
+  - master
+env:
+  global:
+    secure: gzll0CMjPbrPsj9nzSDtHVScKngEMLhd25FxfGUP13lQnRNS055StTjEgQFTFJJYsyap3t95JaBwC6twJME5op8AcV5YAstj2X96cEz0VJIxycfk8XfO5Dds8TxfQlWSo+b7ApSto2eqrcMQkg5XD/Rwg44glx+JOeuc7C39TYgQfJXPGd5hYaZgl/tNZmDsGMdZE4Ewptm5uuCkxWQJbYXHfsCwxWhI0dxnrmtE/hcDkywQOcTCZJtGRxLZFNuHAqfbBkZlzzF5o30+wjHySAHzoXTcaE+ZQUDwQyYCLBayVwoUEv8cco+eVXMH789P/aprVKlxpLgZDpjBIcKHuF4muDO887e1e1SshhIXhU6lbJYXcfr7VRMdSi/DUJvKoYXC2/vh7JdT4Dm0yPwHRaiZlmlDCPpIy/wOpnsc5JQR5SffUqJMEc6fz0mH2btB4Z9+l05VmHIo5JrJ2S2CIiFHiP9dXh2YHY61H+Fpw4XE+IjjXvW8WoktJ3bdmr/yePEMjQ3uIhZx6nhwhEANhqBga3uRJ+v0P1+Xt0DatxSyJG4oe5ECbyRmboM0T51YEC8qqToHcBxLByQMFOduKJZ4/OfzZzYXS878JZ42TsHP+UKo3683HgJPpidwGMPfZtAUa3hiH30BhriwEcmGzpnXkwghd0UfvQEwNowzgZQ=
