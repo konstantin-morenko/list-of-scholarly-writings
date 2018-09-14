@@ -6,6 +6,7 @@ before_install:
   - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-cyrillic texlive-bibtex-extra emacs latexmk biber
 script:
   - make
+  - bash push.sh
 branches:
   only:
   - master
