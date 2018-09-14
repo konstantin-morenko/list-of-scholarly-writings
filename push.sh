@@ -1,0 +1,28 @@
+#!/bin/sh
+# How to set up TravisCI for projects that push back to github:
+# Inspired by:
+# https://gist.github.com/willprice/e07efd73fb7f13f917ea
+
+setup_git() {
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis CI"
+}
+
+commit_pdfs() {
+  git checkout --orphan "travis"
+  git rm --cached $(git ls-files)
+  echo `ls tests`
+  git add konstantin-morenko.pdf konstantin-morenko.bst
+  echo `git status`
+  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+}
+
+upload_files() {
+  git remote add origin-login https://${GH_TOKEN}@github.com/konstantin-morenko/list-of-scholarly-writings.git
+  git push --set-upstream -f origin-login "travis"
+  # git push --set-upstream origin travisbranch
+}
+
+setup_git
+commit_pdfs
+upload_files

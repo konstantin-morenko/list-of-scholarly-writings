@@ -3,7 +3,7 @@ dist: xenial
 language: bash
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-cyrillic texlive-bibtex-extra emacs latexmk
+  - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-cyrillic texlive-bibtex-extra emacs latexmk biber
 script:
   - make
 branches:
