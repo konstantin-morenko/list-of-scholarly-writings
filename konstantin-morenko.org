@@ -987,21 +987,6 @@
   }
 #+END_SRC
 
-**** TODO Векторная диаграмма и моделирование
-     :PROPERTIES:
-     :Condition: dra
-     :Co-authors: ?
-     :PAGES:    ?
-     :Year:     2015
-     :RISC:     0
-     :VAC:      0
-     :Language: Ru
-     :Country:  Ru
-     :Magazine: none
-     :END:
-
- Folder: [[~/ROOT/documents/science/Научные_труды/Статьи/Векторная_диаграмма_и_моделирование]]
-
 **** Применение цепей Маркова при прогнозировании динамики скорости ветра
      :PROPERTIES:
      :Count:    1
