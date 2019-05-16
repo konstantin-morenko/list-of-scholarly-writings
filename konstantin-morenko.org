@@ -1139,7 +1139,35 @@
 #+END_SRC
 
 **** TODO Устройство для контроля параметров молока ВИЭСХ
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко, С. А.
+     :Pages:    6
+     :Year:     2017
+     :RISC:     1
+     :VAC:      0
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Инновации в сельском хозяйстве
+     :END:
 
+#+BEGIN_SRC bibtex
+  @Article{morenko-milk-parameters-control,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Моренко, С. А.},
+   title     = {Устройство для измерения оптических свойств молока},
+   journal   = {Инновации в сельском хозяйстве},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {55-60},
+   number    = {2(23)},
+   year      = {2017},
+   langid    = {russian},
+   media     = {text},
+  }
+#+END_SRC
+
+https://elibrary.ru/item.asp?id=30160197
 
 **** Влияние конструктивных параметров ветроприемных устройств при работе малых ветроустановок на низких скоростях ветрового потока
      :PROPERTIES:
