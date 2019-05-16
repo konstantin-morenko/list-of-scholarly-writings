@@ -157,6 +157,38 @@
   }
 #+END_SRC
 
+*** Двухроторный ветрогенератор с управляемым углом атаки лопасти
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко С. А., Степанчук Г. В.
+     :Pages:    185
+     :Year:     2019
+     :RISC:     
+     :VAC:      
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: 
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Book{morenko-mono-double-rotor-wind-power-plant,
+   title     = {Двухроторный ветрогенератор с управляемым углом атаки
+		    лопасти},
+   subtitle  = {монография},
+   keywords  = {konstantin-morenko},
+   author    = {Моренко, К. С. and Моренко, С. А. and Степанчук, Г. В.},
+   publisher = {Азово-Черноморский инженерный институт ФГБОУ ВО Донской
+		    ГАУ},
+   year      = {2019},
+   address   = {Зерноград},
+   pagetotal = {185},
+   media     = {text},
+   langid    = {russian},
+  }
+#+END_SRC
+
+
 ** Патенты
 
  #+BEGIN_SRC bibtex
