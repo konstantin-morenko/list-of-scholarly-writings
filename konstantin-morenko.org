@@ -121,15 +121,15 @@
 
 *** Handbook of Research on Renewable Energy and Electric Resources for Sustainable Rural Development :scopus:
      :PROPERTIES:
-     :Count:    
+     :Count:    1
      :Condition: pub
-     :Co-authors: 
-     :Pages:    
-     :Year:     
-     :RISC:     
-     :VAC:      
-     :Language: 
-     :Country:  
+     :Co-authors: Доржиев, С. С. and Базарова, Е. Г.
+     :Pages:    11
+     :Year:     2018
+     :RISC:     1
+     :VAC:      0
+     :Language: En
+     :Country:  USA
      :Magazine: 
      :END:
 
@@ -1117,13 +1117,13 @@
   }
 #+END_SRC
 
-*** TODO 2017
+*** 2017
 
 #+BEGIN_SRC bibtex
   @Comment {2017}
 #+END_SRC
 
-**** TODO Устройство для контроля параметров молока ВИЭСХ
+**** Устройство для контроля параметров молока ВИЭСХ
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -1183,4 +1183,6 @@ https://elibrary.ru/item.asp?id=30160197
    url       = {https://elibrary.ru/item.asp?id=32438519},
   }
 #+END_SRC
+
+https://elibrary.ru/item.asp?id=32438519
 
