@@ -1186,3 +1186,38 @@ https://elibrary.ru/item.asp?id=30160197
 
 https://elibrary.ru/item.asp?id=32438519
 
+*** 2018
+
+#+BEGIN_SRC bibtex
+  @Comment {2018}
+#+END_SRC
+
+**** Система журналирования параметров режимов работы двухмашинной ветроэлектростанции
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: 
+     :Pages:    7
+     :Year:     2018
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Вестник ВИЭСХ
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-wind-plant-logging-system,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   title     = {Система журналирования параметров режимов работы
+		    двухмашинной ветроэлектростанции},
+   journal   = {Вестник ВИЭСХ},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {113--119},
+   number    = {4(33)},
+   year      = {2018},
+   langid    = {russian},
+   media     = {text},
+  }
+#+END_SRC
