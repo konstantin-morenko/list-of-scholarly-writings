@@ -158,6 +158,45 @@
   }
 #+END_SRC
 
+*** Advanced Agro-Engineering Technologies for Rural Business Development
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Budnikov, D. and Vasiliev, A. and Vasiliev, A. A. and Mohamed, I. S. and Belov, A.
+     :Pages:    27
+     :Year:     2019
+     :RISC:     1
+     :VAC:      0
+     :Language: En
+     :Country:  USA
+     :Magazine: 
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Book{advanced-agro-engineering-technologies-2019,
+   title     = {Advanced Agro-Engineering Technologies for Rural Business Development},
+   publisher = {IGI Global},
+   isbn      = {9781522575733},
+   doi       = {10.4018/978-1-5225-7573-3},
+   editor    = {Kharchenko, V. and Vasant, P.},
+   year      = {2019},
+   address   = {USA, PA, Hershey},
+   pagetotal = {484},
+   media     = {text},
+   langid    = {english},
+  }
+  @Inbook{morenko-application-electrophysical-effects,
+   keywords  = {konstantin-morenko},
+   author    = {Morenko, K. S. and Budnikov, D. and Vasiliev, A. and Vasiliev, A. A. and Mohamed, I. S. and Belov, A.},
+   crossref  = {advanced-agro-engineering-technologies-2019},
+   title     = {The Application of Electrophysical Effects in the Processing of Agricultural Materials},
+   pages     = {1--27},
+   doi       = {10.4018/978-1-5225-7573-3.ch001},
+   url       = {https://www.researchgate.net/publication/331910417_The_Application_of_Electrophysical_Effects_in_the_Processing_of_Agricultural_Materials},
+   langid    = {english},
+  }
+#+END_SRC
+
 *** Двухроторный ветрогенератор с управляемым углом атаки лопасти
      :PROPERTIES:
      :Count:    1
