@@ -228,6 +228,43 @@
   }
 #+END_SRC
 
+*** Handbook of Research on Smart Computing for Renewable Energy and Agro-Engineering
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Konstantin S. Morenko and Pavel V. Tikhonov and Vladimir A. Mayorov
+     :Pages:    22
+     :Year:     2020
+     :RISC:     1
+     :VAC:      0
+     :Language: En
+     :Country:  USA
+     :Magazine: 
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Book{research-on-smart-computing-2020,
+   title     = {Handbook of Research on Smart Computing for Renewable Energy and Agro-Engineering},
+   publisher = {IGI Global},
+   isbn      = {9781799812166},
+   doi       = {10.4018/978-1-7998-1216-6},
+   editor    = {Kharchenko, V. and Vasant, P.},
+   year      = {2020},
+   address   = {USA, PA, Hershey},
+   pagetotal = {537},
+   media     = {text},
+   langid    = {english},
+  }
+  @Inbook{morenko-energy-saving-systems-photovoltaic,
+   keywords  = {konstantin-morenko},
+   author    = {Morenko, Konstantin S. and Tikhonov, Pavel V. and Mayorov, Vladimir A.},
+   crossref  = {research-on-smart-computing-2020},
+   title     = {Energy-Saving Systems Using Photovoltaic Modules},
+   pages     = {464--485},
+   doi       = {10.4018/978-1-7998-1216-6.ch01},
+   langid    = {english},
+  }
+#+END_SRC
 ** Патенты
 
  #+BEGIN_SRC bibtex
