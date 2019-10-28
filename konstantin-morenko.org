@@ -1199,7 +1199,7 @@
   @Comment {2017}
 #+END_SRC
 
-**** Устройство для контроля параметров молока ВИЭСХ
+**** Устройство для измерения оптических свойств молока
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -1295,5 +1295,73 @@ https://elibrary.ru/item.asp?id=32438519
    year      = {2018},
    langid    = {russian},
    media     = {text},
+  }
+#+END_SRC
+*** TODO 2019
+
+#+BEGIN_SRC bibtex
+  @Comment {2019}
+#+END_SRC
+
+**** Математическая модель вихревого нагнетательного блока системы экстракции атмосферной влаги
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Доржиев, С. С. and Базарова, Е. Г.
+     :Pages:    5
+     :Year:     2019
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Вестник ВИЭСХ
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-whirl-block-model-extraction,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Доржиев, С. С. and Базарова, Е. Г.},
+   title     = {Математическая модель вихревого нагнетательного блока
+		    системы экстракции атмосферной влаги},
+   journal   = {Вестник ВИЭСХ},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {95--99},
+   number    = {3(36)},
+   year      = {2019},
+   langid    = {russian},
+   media     = {text},
+   issn      = {2658-4859},
+   url       = {https://elibrary.ru/item.asp?id=41192538},
+  }
+#+END_SRC
+
+**** Методика учета растительной массы Борщевика Сосновского
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Доржиев, С. С. and Базарова, Е. Г.
+     :Pages:    5
+     :Year:     2019
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Вестник ВИЭСХ
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-heracleum-sosnovsky-green-mass,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Доржиев, С. С. and Базарова, Е. Г.},
+   title     = {Методика учета растительной массы Борщевика Сосновского},
+   journal   = {Вестник ВИЭСХ},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {107--111},
+   number    = {3(36)},
+   year      = {2019},
+   langid    = {russian},
+   media     = {text},
+   issn      = {2658-4859},
+   url       = {https://elibrary.ru/item.asp?id=41192541},
   }
 #+END_SRC
