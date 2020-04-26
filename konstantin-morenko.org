@@ -1309,7 +1309,7 @@ https://elibrary.ru/item.asp?id=32438519
    media     = {text},
   }
 #+END_SRC
-*** TODO 2019
+*** 2019
 
 #+BEGIN_SRC bibtex
   @Comment {2019}
@@ -1377,3 +1377,42 @@ https://elibrary.ru/item.asp?id=32438519
    url       = {https://elibrary.ru/item.asp?id=41192541},
   }
 #+END_SRC
+*** 2020
+
+#+BEGIN_SRC bibtex
+  @Comment {2020}
+#+END_SRC
+
+**** Модель мощности малой ветроэлектрической установки
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко, С. А.
+     :Pages:    4
+     :Year:     2020
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Электротехнологии и электрооборудование в АПК
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-power-model-small-wind-plant,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Моренко, С. А.},
+   title     = {Модель мощности малой ветроэлектрической установки},
+   journal   = {Электротехнологии и электрооборудование в АПК},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {60--63},
+   number    = {1(38)},
+   volume    = {67},
+   year      = {2020},
+   langid    = {russian},
+   media     = {text},
+   issn      = {2658-4859},
+   doi       = {10.22314/2658-4859-2020-67-1-60-63},
+   url       = {https://elibrary.ru/item.asp?id=42684969},
+  }
+#+END_SRC
+
