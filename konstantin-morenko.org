@@ -350,6 +350,43 @@
 
 #+END_SRC
 
+*** 2019
+
+**** Двухмашинный ветрогенератор
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors:
+     :Pages:
+     :Year:     2019
+     :Language: Ru
+     :Country:  Ru
+     :END:
+
+https://www1.fips.ru/registers-web/
+№ 2019142787
+
+#+BEGIN_SRC bibtex
+@Patent{patent-doublemachine-wind-plant,
+ keywords  = {konstantin-morenko,scientific},
+ author = {Моренко, К. С.},
+ title = {Двухмашинный ветрогенератор},
+ number = {},
+ date = {},
+ requestdate = {2019-12-20},
+ requestnumber = {2019142787},
+ ipc = {МПК\ensuremath{^7} H02K47/26 (2006.01)},
+ holder = {Моренко, К. С.},
+ type = {patreq},
+ publicationdate = {},
+ publication = {},
+ pagetotal = {},
+ langid = {russian},
+ media = {text},
+ url  = {},
+}
+#+END_SRC
+
 ** Отчеты о НИР
 
 **** TODO ВИМ 2018
