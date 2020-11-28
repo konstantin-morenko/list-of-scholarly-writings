@@ -1,7 +1,6 @@
 #+TITLE: Список научных трудов Моренко К. С.
-#+EMAIL: me@konstantin-morenko.ru
+#+EMAIL: vim@konstantin-morenko.ru
 #+AUTHOR: Моренко К. С.
-#+DATE: <2018-03-15 Чт>
 #+LANGUAGE: ru
 #+COLUMNS: %25ITEM %2Count{+} %5Co-authors %3Condition %3Pages{+} %4Year %2Language %2Country
 #+PROPERTY: header-args:bibtex :tangle konstantin-morenko.bst
@@ -223,6 +222,7 @@
    year      = {2019},
    address   = {Зерноград},
    pagetotal = {185},
+   isbn      = {978-5-91833-183-5},
    media     = {text},
    langid    = {russian},
   }
@@ -261,7 +261,7 @@
    crossref  = {research-on-smart-computing-2020},
    title     = {Energy-Saving Systems Using Photovoltaic Modules},
    pages     = {464--485},
-   doi       = {10.4018/978-1-7998-1216-6.ch01},
+   doi       = {10.4018/978-1-7998-1216-6.ch018},
    langid    = {english},
   }
 #+END_SRC
