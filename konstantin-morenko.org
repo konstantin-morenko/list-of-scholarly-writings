@@ -15,6 +15,10 @@
 
 Выходной файл структурирован по разделам и годам
 
+Во всех записях Моренко К. С. выставлен на первое место в списке
+авторов, чтобы избежать скрытия фамилии при большом количестве
+авторов.
+
 ** Заголовок ~.bst~-файла
 
 #+BEGIN_SRC bibtex
@@ -360,7 +364,7 @@ https://elibrary.ru/item.asp?id=32500462
 
 ** TODO Статьи
    :PROPERTIES:
-   :COLUMNS:  %25ITEM %5Co-authors %3Condition %3Pages{+} %4Year %2RISC{+} %2VAC{+} %2Language %2Country %15Magazine
+   :COLUMNS:  %25ITEM %5Co-authors %3Condition %3Pages{+} %4Year %2RISC{+} %2VAC{+} %2WOS{+} %2Scopus{+} %2Language %2Country %15Magazine
    :END:
 
 Поля свойств для статей
