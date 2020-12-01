@@ -1457,3 +1457,34 @@ https://elibrary.ru/item.asp?id=32438519
   }
 #+END_SRC
 
+**** Система мониторинга рабочих параметров осветительного комплекса с параллельным питанием от двух источников
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Тихонов П.В., Харченко В.В., Комиссаров Н.С., Сычев А.О.
+     :Pages:    9
+     :Year:     2020
+     :RISC:     1
+     :VAC:      0
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Агротехника и энергообеспечение
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-monitoring-parallel-light,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Тихонов, П.В. and Харченко, В. В. and
+		    Комиссаров, Н. С. and Сычев, А.О.},
+   title     = {Система мониторинга рабочих параметров осветительного
+		    комплекса с параллельным питанием от двух
+		    источников},
+   journal   = {Агротехника и энергообеспечение},
+   pages     = {36--44},
+   number    = {2(27)},
+   year      = {2020},
+   langid    = {russian},
+   media     = {text},
+  }
+#+END_SRC
+
