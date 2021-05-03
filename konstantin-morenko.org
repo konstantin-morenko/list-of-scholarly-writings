@@ -1485,6 +1485,73 @@ https://elibrary.ru/item.asp?id=32438519
    year      = {2020},
    langid    = {russian},
    media     = {text},
+   url       = {https://elibrary.ru/item.asp?id=44216701},
+  }
+#+END_SRC
+
+*** 2021
+**** Эффективность работы разнородной трехагрегатной ветроэлектрической установки
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко, С. А. and Бугреев, В. А.
+     :Pages:    6
+     :Year:     2021
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Наука и техника транспорта
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-efficiency-three-type-wind-power-plant,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Моренко, С. А. and Бугреев, В. А.},
+   title     = {Эффективность работы разнородной трехагрегатной ветроэлектрической установки},
+   journal   = {Наука и техника транспорта},
+   publisher = {Российский университет транспорта (МИИТ) (Москва)},
+   pages     = {13--18},
+   number    = {1},
+   year      = {2021},
+   langid    = {russian},
+   media     = {text},
+   issn      = {2074-9325},
+   url       = {https://www.elibrary.ru/item.asp?id=44901935},
+  }
+#+END_SRC
+
+
+**** Влияние параметров среды на выходную мощность ветроэлектрической части энергокомплекса на базе ВИЭ
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко, С. А.
+     :Pages:    4
+     :Year:     2021
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Электротехнологии и электрооборудование в АПК
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-environmental-influence-wind-power-plant,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Моренко, С. А.},
+   title     = {Влияние параметров среды на выходную мощность ветроэлектрической части энергокомплекса на базе ВИЭ},
+   journal   = {Электротехнологии и электрооборудование в АПК},
+   publisher = {Федеральный научный агроинженерный центр ВИМ (Москва)},
+   pages     = {55-58},
+   volume    = {68},
+   number    = {1(42)},
+   year      = {2021},
+   langid    = {russian},
+   media     = {text},
+   issn      = {2658-4859},
+   doi       = {10.22314/2658-4859-2021-68-1-55-58},
+   url       = {https://elibrary.ru/item.asp?id=44927404},
   }
 #+END_SRC
 
