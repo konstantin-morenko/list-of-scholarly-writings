@@ -398,7 +398,6 @@ https://www1.fips.ru/registers-web/
 
 https://elibrary.ru/item.asp?id=32500462
 
-
 ** TODO Статьи
    :PROPERTIES:
    :COLUMNS:  %25ITEM %5Co-authors %3Condition %3Pages{+} %4Year %2RISC{+} %2VAC{+} %2WOS{+} %2Scopus{+} %2Language %2Country %15Magazine
@@ -425,11 +424,11 @@ https://elibrary.ru/item.asp?id=32500462
   @Comment {ARTICLES}
 #+END_SRC
 
-*** 2011
+*** 2011    
 
 #+BEGIN_SRC bibtex
   @Comment {2011}
-#+END_SRC
+#+END_SRC   
 
 **** Выбор типа ветроэлектрического агрегата для автономного электроснабжения фермерского хозяйства
      :PROPERTIES:
@@ -467,7 +466,7 @@ https://elibrary.ru/item.asp?id=32500462
    pages     = {20--24},
    langid    = {russian},
   }
-#+END_SRC
+#+END_SRC   
 
 **** Двухроторный электрогенератор для ветроустановки
      :PROPERTIES:
@@ -501,7 +500,7 @@ https://elibrary.ru/item.asp?id=32500462
    pages = {153--159},
    langid    = {russian},
   }
-#+END_SRC
+#+END_SRC   
 
 **** Двухроторные электрические генераторы для ветроустановок
      :PROPERTIES:
@@ -528,7 +527,7 @@ https://elibrary.ru/item.asp?id=32500462
    year      = {2011},
    langid    = {russian},
    media     = {text},
-  }
+  }         
 #+END_SRC
 
 *** 2012
@@ -946,7 +945,7 @@ https://elibrary.ru/item.asp?id=32500462
    langid    = {russian},
    media     = {text},
    url       = {http://vestnik.viesh.ru/wp-content/uploads/2015/03/2013-02.pdf},
-  }
+  }         
 #+END_SRC
 
 *** 2014
@@ -1552,6 +1551,42 @@ https://elibrary.ru/item.asp?id=32438519
    issn      = {2658-4859},
    doi       = {10.22314/2658-4859-2021-68-1-55-58},
    url       = {https://elibrary.ru/item.asp?id=44927404},
+  }
+#+END_SRC
+
+**** Multi-unit modular wind farm for areas of low wind potential
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Доржиев С. С., Базарова Е. Г., Розенблюм М. И.
+     :Pages:    1
+     :Year:     2021
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: The II International Theoretical and Practical Conference on Alternative and Smart Energy
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Collection{ii-international-alternative-smart-energy-2021,
+   title     = {The II "International Theoretical and Practical Conference on Alternative and Smart Energy"},
+   subtitle  = {Voronezh, 16–18 сентября 2020 года},
+   publisher = {Воронежский государственный технический университет},
+   year      = {2021},
+   address   = {Воронеж},
+   media     = {text},
+   langid    = {russian},
+  }
+  @Incollection{morenko-multi-unit-modular,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Morenko, K. S. and Dorjiev, S. S. and Bazarova,
+		    E. G. and Rosenblum, M. I.},
+   crossref  = {ii-international-alternative-smart-energy-2021},
+   title     = {Multi-unit modular wind farm for areas of low wind
+		    potential},
+   pages     = {12010},
+   langid    = {russian},
   }
 #+END_SRC
 
