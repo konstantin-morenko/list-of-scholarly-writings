@@ -1520,7 +1520,6 @@ https://elibrary.ru/item.asp?id=32438519
   }
 #+END_SRC
 
-
 **** Влияние параметров среды на выходную мощность ветроэлектрической части энергокомплекса на базе ВИЭ
      :PROPERTIES:
      :Count:    1
@@ -1590,3 +1589,36 @@ https://elibrary.ru/item.asp?id=32438519
   }
 #+END_SRC
 
+**** 
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: 
+     :Pages:    3
+     :Year:     2021
+     :RISC:     1
+     :VAC:      0
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Тенденции развития экономики и менеджмента
+     :END:
+
+#+BEGIN_SRC bibtex
+  @Collection{trends-in-economics-management-2021,
+   title     = {Тенденции развития экономики и менеджмента},
+   subtitle  = {Сборник научных трудов по итогам международной научно-практической конференции (11 июня 2021 г.)},
+   publisher = {Инновационный центр развития образования и науки},
+   year      = {2021},
+   address   = {Нижний Новгород},
+   media     = {text},
+   langid    = {russian},
+  }
+  @Incollection{morenko-help-desk-in-electronic-documentation,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С.},
+   crossref  = {trends-in-economics-management-2021},
+   title     = {Роль справочного центра в процессе внедрения систем электронного документооборота},
+   pages     = {34--36},
+   langid    = {russian},
+  }
+#+END_SRC
