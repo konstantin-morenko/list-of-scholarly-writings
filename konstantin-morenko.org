@@ -113,7 +113,7 @@
    year      = {2014},
    langid    = {russian},
    media     = {text},
-   url       = {http://vak.ed.gov.ru/az/server/php/filer.php?table=att_case&fld=autoref&key[]=165203},
+   url       = {https://vak.minobrnauki.gov.ru/advert/165203},
   }
 #+END_SRC
 
