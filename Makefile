@@ -7,7 +7,7 @@ konstantin-morenko.pdf: konstantin-morenko.bst konstantin-morenko.tex
 	latexmk -pdf konstantin-morenko.tex
 
 konstantin-morenko.bst: konstantin-morenko.org
-	emacs --script org2bst.el
+	emacs -q --script org2bst.el
 
 pdf:
 	pdflatex konstantin-morenko.tex
