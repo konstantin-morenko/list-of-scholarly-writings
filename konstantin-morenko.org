@@ -1553,6 +1553,24 @@ https://elibrary.ru/item.asp?id=32438519
   }
 #+END_SRC
 
+**** Система светодиодного освещения в смешанных сетях постоянного и переменного тока
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-led-lighting-system,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Тихонов, П. В. and Сычев, А. О.},
+   title     = {Система светодиодного освещения в смешанных сетях постоянного и переменного тока},
+   journal   = {Вестник ЮУрГУ. Серия "Энергетика"},
+   pages     = {73--81},
+   volume    = {21},
+   number    = {4},
+   year      = {2021},
+   langid    = {russian},
+   media     = {text},
+   doi       = {10.14529/power210409},
+  }
+#+END_SRC
+
 **** Multi-unit modular wind farm for areas of low wind potential
      :PROPERTIES:
      :Count:    1
@@ -1589,7 +1607,7 @@ https://elibrary.ru/item.asp?id=32438519
   }
 #+END_SRC
 
-**** 
+**** Роль справочного центра в процессе внедрения систем электронного документооборота
      :PROPERTIES:
      :Count:    1
      :Condition: pub
@@ -1622,3 +1640,35 @@ https://elibrary.ru/item.asp?id=32438519
    langid    = {russian},
   }
 #+END_SRC
+**** Практический опыт использования насоса малой системы водоснабжения
+     :PROPERTIES:
+     :Count:    1
+     :Condition: pub
+     :Co-authors: Моренко, С. А.
+     :Pages:    6
+     :Year:     2021
+     :RISC:     1
+     :VAC:      1
+     :Language: Ru
+     :Country:  Ru
+     :Magazine: Наука и техника транспорта
+     :END:
+
+https://www.elibrary.ru/item.asp?id=47422357
+
+#+BEGIN_SRC bibtex
+  @Article{morenko-small-pump-system,
+   keywords  = {konstantin-morenko,scientific},
+   author    = {Моренко, К. С. and Моренко, С. А.},
+   title     = {Практический опыт использования насоса малой системы водоснабжения},
+   journal   = {Наука и техника транспорта},
+   pages     = {50--54},
+   number    = {4},
+   year      = {2021},
+   langid    = {russian},
+   media     = {text},
+   doi       = {10.53883/20749325_2021_04_50},
+  }
+#+END_SRC
+
+
